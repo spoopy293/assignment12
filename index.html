@@ -26,14 +26,8 @@
   
         <H2><u>whats the funny little numbers on the back of ur card </H2></u>
         </H2>
-        <script>
-        
-          function showAlert() {
-              alert('Thank Teehee!');
-          }
-      </script>
-      
-          <form onsubmit="showAlert(); return false;">
+        <script> function showAlert() { const firstNameInput = document.getElementById("fname"); const firstName = firstNameInput.value; alert(`Teehee Thank you, ${firstName}!`); } </script>
+        <form onsubmit="showAlert(); return false;">
 
         <label for="fname"><strong> First Name:</strong></label>
         <input type="text" id="fname" name="fname"><br><br>
@@ -51,7 +45,7 @@
         <label for="password"><strong>Email Password pwease </strong></label>
         <input type="text" id="password" name="password"><br><br>
 
-        <input type="button" onclick="formSubmit()" value="yippiee!">
+        <input type="button" onclick="showAlert()" value="yippiee!">
       </form>
     </SECtion>
     </main>
